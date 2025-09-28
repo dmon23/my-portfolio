@@ -1,0 +1,27 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+.my-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* max 2 columns */
+  gap: 1rem;
+  grid-auto-flow: row;
+  justify-items: stretch;  /* items take full column width */
+}
+@media (max-width: 600px) {
+  .my-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+<!-- end Simple Custom CSS and JS -->
